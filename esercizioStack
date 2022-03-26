@@ -1,0 +1,33 @@
+package com.company;
+
+import java.util.Stack;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Conversione c = new Conversione();
+        System.out.println(c.convertiBase(10, 2));
+
+    }
+
+    public static class Conversione {
+        private Stack st;
+
+        public Conversione(Stack stk) {
+            this.st = stk;
+        }
+
+        public Conversione() {
+            st = new Stack();
+        }
+
+        public String convertiBase(int numero, int base) {
+            int num, div;
+            while(numero != 0){
+                num = numero%base;
+                div = numero / base;
+            }
+            return null;
+        }
+    }
+}
